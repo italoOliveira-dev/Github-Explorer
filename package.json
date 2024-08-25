@@ -4,5 +4,9 @@
   "main": "index.js",
   "repository": "https://github.com/italoOliveira-dev/Github-Explorer.git",
   "author": "Italo Oliveira <italooliveira-dev@hotmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
 }
