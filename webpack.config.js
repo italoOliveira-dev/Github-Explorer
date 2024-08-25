@@ -5,7 +5,7 @@ const isDevelopment = process.env.NODE_ENV !== "production";
 
 module.exports = {
   mode: isDevelopment ? "development" : "production",
-  devtool: isDevelopment ? 'eval-source-map' : "source-map",
+  devtool: isDevelopment ? "eval-source-map" : "source-map",
   entry: path.resolve(__dirname, "src", "index.jsx"),
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -15,7 +15,11 @@ module.exports = {
     extensions: [".js", ".jsx"],
   },
   devServer: {
-    static: path.resolve(__dirname, "public"),
+    static: {
+      directory: path.join(__dirname, "public"),
+    },
+    compress: true,
+    port: 9000,
   },
   plugins: [
     new HtmlWebpackPlugin({
