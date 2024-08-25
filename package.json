@@ -1,0 +1,8 @@
+{
+  "name": "github-explorer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/italoOliveira-dev/Github-Explorer.git",
+  "author": "Italo Oliveira <italooliveira-dev@hotmail.com>",
+  "license": "MIT"
+}
